@@ -46,7 +46,7 @@ Com base no esquema conceitual, podemos criar o esquema lógico usando o modelo 
   - OrdemServicoID (Foreign Key para OrdemServico)
   - ServicoID (Foreign Key para Serviço)
 
-![oficina.png](D:\Git%20Repositorios\SQL-Dio-Challenge\oficina.png)
+![oficina.png](https://github.com/rockiir/SQL-Dio-Challenge/blob/main/oficina.png)
 
 
 
@@ -58,7 +58,7 @@ Recuperação simples de clientes e seus veículos:
 FROM Cliente c
 INNER JOIN Veiculo v ON c.ID = v.ClienteID;`
 
-![](D:\Git%20Repositorios\SQL-Dio-Challenge\img\5.png)
+![](https://github.com/rockiir/SQL-Dio-Challenge/blob/main/img/5.png)
 
 Filtragem de ordens de serviço em andamento:
 
@@ -67,7 +67,7 @@ FROM OrdemServico os
 INNER JOIN Cliente c ON os.ClienteID = c.ID
 WHERE os.Status = 'Em Andamento';`
 
-![](C:\Users\Raquel\AppData\Roaming\marktext\images\2023-08-29-17-59-15-image.png)
+![](https://github.com/rockiir/SQL-Dio-Challenge/blob/main/img/6.png)
 
 Expressão para calcular o valor total de uma ordem de serviço:
 
@@ -77,14 +77,14 @@ INNER JOIN ItemServico it ON os.ID = it.OrdemServicoID
 INNER JOIN Servico s ON it.ServicoID = s.ID
 GROUP BY os.ID;`
 
-![](C:\Users\Raquel\AppData\Roaming\marktext\images\2023-08-29-18-00-53-image.png)
+![](https://github.com/rockiir/SQL-Dio-Challenge/blob/main/img/7.png)
 
 Ordenação de clientes por nome:
 
 `SELECT * FROM Cliente
 ORDER BY Nome;`
 
-![](C:\Users\Raquel\AppData\Roaming\marktext\images\2023-08-29-18-03-09-image.png)
+![](https://github.com/rockiir/SQL-Dio-Challenge/blob/main/img/8.png)
 
 
 
@@ -98,7 +98,7 @@ INNER JOIN Servico s ON it.ServicoID = s.ID
 GROUP BY os.ID
 HAVING SUM(s.Preco) > 10;
 
-![](D:\Git%20Repositorios\SQL-Dio-Challenge\img\9.png)
+![](https://github.com/rockiir/SQL-Dio-Challenge/blob/main/img/9.png)
 
 
 
