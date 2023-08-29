@@ -87,3 +87,9 @@ Raquel Matos
 ## Referências
 
 - [Digital Innovation One](https://digitalinnovation.one/)
+
+
+## Atividade 2
+[Atividade2](https://github.com/rockiir/SQL-Dio-Challenge/blob/main/Dados%20do%20zero.md)
+
+
