@@ -26,6 +26,10 @@ A modelagem lógica do banco de dados envolve as seguintes entidades principais:
 
 - **Entrega:** Registra informações sobre as entregas dos pedidos, incluindo status e código de rastreio.
 
+
+
+![Diagrama.png](D:\Git%20Repositorios\SQL-Dio-Challenge\Diagrama.png)
+
 ## Consultas SQL
 
 Foram desenvolvidas consultas SQL para realizar análises e obter informações úteis a partir do banco de dados. As consultas abordam tópicos como recuperação de dados, filtragem, ordenação, agregação e junção de tabelas.
@@ -41,7 +45,7 @@ GROUP BY c.Nome;`
 
 
 
-![](C:\Users\Raquel\AppData\Roaming\marktext\images\2023-08-29-17-14-31-image.png)
+![](D:\Git%20Repositorios\SQL-Dio-Challenge\img\1.png)
 
 - Algum vendedor também é fornecedor?
 
@@ -52,7 +56,7 @@ WHERE ID IN (
     FROM Produto
 );`
 
-
+![](D:\Git%20Repositorios\SQL-Dio-Challenge\img\2.png)
 
 
 
@@ -63,7 +67,7 @@ FROM Produto p
 INNER JOIN Fornecedor f ON p.FornecedorID = f.ID
 INNER JOIN Estoque e ON p.ID = e.ProdutoID;`
 
-
+![](D:\Git%20Repositorios\SQL-Dio-Challenge\img\3.png)
 
 
 
@@ -74,19 +78,7 @@ FROM Fornecedor f
 INNER JOIN Produto p ON f.ID = p.FornecedorID
 GROUP BY f.Nome;`
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+![](D:\Git%20Repositorios\SQL-Dio-Challenge\img\4.png)
 
 
 
