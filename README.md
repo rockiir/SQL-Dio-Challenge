@@ -28,7 +28,7 @@ A modelagem lógica do banco de dados envolve as seguintes entidades principais:
 
 
 
-![Diagrama.png](D:\Git%20Repositorios\SQL-Dio-Challenge\Diagrama.png)
+![Diagrama.png](https://github.com/rockiir/SQL-Dio-Challenge/blob/main/Diagrama.png)
 
 ## Consultas SQL
 
@@ -43,9 +43,7 @@ FROM Cliente c
 LEFT JOIN Pedido p ON c.ID = p.ClienteID
 GROUP BY c.Nome;`
 
-
-
-![](D:\Git%20Repositorios\SQL-Dio-Challenge\img\1.png)
+![](https://github.com/rockiir/SQL-Dio-Challenge/blob/main/img/1.png)
 
 - Algum vendedor também é fornecedor?
 
@@ -56,7 +54,7 @@ WHERE ID IN (
     FROM Produto
 );`
 
-![](D:\Git%20Repositorios\SQL-Dio-Challenge\img\2.png)
+![](https://github.com/rockiir/SQL-Dio-Challenge/blob/main/img/2.png)
 
 
 
@@ -67,7 +65,7 @@ FROM Produto p
 INNER JOIN Fornecedor f ON p.FornecedorID = f.ID
 INNER JOIN Estoque e ON p.ID = e.ProdutoID;`
 
-![](D:\Git%20Repositorios\SQL-Dio-Challenge\img\3.png)
+![](https://github.com/rockiir/SQL-Dio-Challenge/blob/main/img/3.png)
 
 
 
@@ -78,7 +76,7 @@ FROM Fornecedor f
 INNER JOIN Produto p ON f.ID = p.FornecedorID
 GROUP BY f.Nome;`
 
-![](D:\Git%20Repositorios\SQL-Dio-Challenge\img\4.png)
+![](https://github.com/rockiir/SQL-Dio-Challenge/blob/main/img/4.png)
 
 
 
